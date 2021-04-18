@@ -26,7 +26,7 @@ class SocketService with ChangeNotifier {
   }
 
   void _initConfig() {
-    this._socket = IO.io('http://10.5.50.37:3000', <String, dynamic>{
+    this._socket = IO.io('http://localhost:3000', <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': true,
     });
